@@ -1,0 +1,11 @@
+[Unit]
+Description=ChargerWallet Bridge
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/chargerwalletd
+User=chargerwalletd
+
+[Install]
+WantedBy=multi-user.target

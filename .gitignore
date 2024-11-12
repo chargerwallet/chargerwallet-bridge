@@ -1,0 +1,13 @@
+
+# installers and secret
+release/**/target
+release/**/output
+release/**/input_files/*
+
+# binary
+chargerwalletd_*
+chargerwallet
+
+# misc garbage
+.DS_Store
+.vscode

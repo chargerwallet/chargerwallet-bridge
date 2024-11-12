@@ -1,0 +1,2 @@
+systemctl stop chargerwalletd.service
+systemctl disable chargerwalletd.service

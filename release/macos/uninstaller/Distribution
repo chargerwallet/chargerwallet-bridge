@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+  <!--displayed in the header-->
+  <title>ChargerWallet Bridge</title>
+  <!--displayed on start, can be localized-->
+  <welcome file="welcome.txt" mime-type="text/plain" />
+
+  <pkg-ref id="com.chargerwallet.bridge" />
+
+  <choices-outline>
+    <line choice="com.chargerwallet.bridge" />
+  </choices-outline>
+
+  <choice id="com.chargerwallet.bridge" visible="true" title="ChargerWallet Bridge Uninstaller">
+    <pkg-ref id="com.chargerwallet.bridge" />
+  </choice>
+  <pkg-ref id="com.chargerwallet.bridge" version="VERSION" onConclusion="none">com.chargerwallet.bridge.uninstall.pkg</pkg-ref>
+
+  <options customize="never" allow-external-scripts="no"/>
+
+</installer-gui-script>
